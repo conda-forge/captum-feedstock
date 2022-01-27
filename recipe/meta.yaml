@@ -11,7 +11,7 @@ source:
   sha256: 1e458921f8810ee6689b56c01e678b28afcaba72648241f0f9ef14583ab54993
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -49,7 +49,7 @@ about:
 
     *Captum is currently in beta and under active development!*
 
-    PyPI: https://pypi.org/project/captum/
+    PyPI: [https://pypi.org/project/captum/](https://pypi.org/project/captum/)
 
   doc_url: https://captum.ai/
   dev_url: https://github.com/pytorch/captum
@@ -57,3 +57,7 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    # Maintainers from package repo
+    - NarineK
+    - aobo-y
+    - vivekmig
