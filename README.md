@@ -21,7 +21,7 @@ built with domain-specific libraries such as torchvision, torchtext, and others.
 
 *Captum is currently in beta and under active development!*
 
-PyPI: https://pypi.org/project/captum/
+PyPI: [https://pypi.org/project/captum/](https://pypi.org/project/captum/)
 
 
 Current build status
@@ -131,5 +131,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@NarineK](https://github.com/NarineK/)
+* [@aobo-y](https://github.com/aobo-y/)
 * [@sugatoray](https://github.com/sugatoray/)
+* [@vivekmig](https://github.com/vivekmig/)
 
