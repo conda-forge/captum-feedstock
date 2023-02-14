@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/captum-{{ version }}.tar.gz
-  sha256: 84af2c8793d34c440a351793b5ca705b8542745e2dc8bc24afb1d9b86f3bf6ec
+  sha256: 01bb374622d46b56acd590462757bf2087ed3721dcebf4922db0fa77548d6524
 
 build:
   number: 0
