@@ -1,5 +1,5 @@
 {% set name = "captum" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/captum-{{ version }}.tar.gz
-  sha256: 01bb374622d46b56acd590462757bf2087ed3721dcebf4922db0fa77548d6524
+  sha256: 7ca87d0dc67b3b7589a730b970b9536172a5468e0e31bf8657fdd73abc568a33
 
 build:
   number: 1
