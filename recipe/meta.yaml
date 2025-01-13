@@ -25,6 +25,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pytorch >=1.6
+    - tqdm
 
 test:
   imports:
