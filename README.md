@@ -3,7 +3,7 @@ About captum-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/captum-feedstock/blob/main/LICENSE.txt)
 
-Home: https://captum.ai
+Home: https://captum.ai/
 
 Package license: BSD-3-Clause
 
@@ -14,14 +14,10 @@ Development: https://github.com/pytorch/captum
 Documentation: https://captum.ai/
 
 Captum is a model interpretability and understanding library for PyTorch.
-Captum means comprehension in Latin and contains general purpose
-implementations of integrated gradients, saliency maps, smoothgrad,
-vargrad and others for PyTorch models. It has quick integration for models
-built with domain-specific libraries such as torchvision, torchtext, and others.
-
-*Captum is currently in beta and under active development!*
-
-PyPI: [https://pypi.org/project/captum/](https://pypi.org/project/captum/)
+Captum means comprehension in Latin and contains general purpose implementations
+of integrated gradients, saliency maps, smoothgrad, vargrad and others for
+PyTorch models. It has quick integration for models built with domain-specific
+libraries such as torchvision, torchtext, and others.
 
 
 Current build status
