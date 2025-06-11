@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - matplotlib-base
-    - numpy
+    - numpy <2.0
     - packaging
     - python >={{ python_min }}
     - pytorch >=1.10
