@@ -1,19 +1,18 @@
 {% set name = "captum" %}
-{% set version = "0.7.0" %}
-
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/captum-{{ version }}.tar.gz
-  sha256: 7ca87d0dc67b3b7589a730b970b9536172a5468e0e31bf8657fdd73abc568a33
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 73f2e5a07ffe6ac6647a6f12cd2f67f0d8f717329f150ddf08ef73cba0858d26
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -21,38 +20,35 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - python >={{ python_min }}
     - matplotlib-base
     - numpy
-    - pytorch >=1.6
+    - packaging
+    - python >={{ python_min }}
+    - pytorch >=1.10
     - tqdm
 
 test:
   imports:
     - captum
     - captum._utils
-  commands:
-    - pip check
   requires:
     - pip
     - python {{ python_min }}
+  commands:
+    - pip check
 
 about:
-  home: https://captum.ai
-  summary: Model interpretability for PyTorch
-  license: BSD-3-Clause
-  license_file: LICENSE
+  home: https://captum.ai/
+  summary: 'Model interpretability for PyTorch'
   description: |
     Captum is a model interpretability and understanding library for PyTorch.
-    Captum means comprehension in Latin and contains general purpose
-    implementations of integrated gradients, saliency maps, smoothgrad,
-    vargrad and others for PyTorch models. It has quick integration for models
-    built with domain-specific libraries such as torchvision, torchtext, and others.
-
-    *Captum is currently in beta and under active development!*
-
-    PyPI: [https://pypi.org/project/captum/](https://pypi.org/project/captum/)
-
+    Captum means comprehension in Latin and contains general purpose implementations
+    of integrated gradients, saliency maps, smoothgrad, vargrad and others for
+    PyTorch models. It has quick integration for models built with domain-specific
+    libraries such as torchvision, torchtext, and others.
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
   doc_url: https://captum.ai/
   dev_url: https://github.com/pytorch/captum
 
